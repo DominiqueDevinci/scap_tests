@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<cvrfdoc xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1" xmlns:cvrf="http://www.icasi.org/CVRF/schema/cvrf/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.icasi.org/CVRF/schema/cvrf/1.1 http://www.icasi.org/CVRF/schema/cvrf/1.1" >
+    <DocumentTitle xml:lang="en">CVE example in CVRF 1.1: 20190424</DocumentTitle>
+    <DocumentType>CVE List</DocumentType>
+    <DocumentPublisher Type="Other">
+		<!-- publisher details -->
+    </DocumentPublisher>
+	<Vulnerability Ordinal="132677" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+      <Title>CVE-2015-9264</Title>
+      <Notes>
+         <Note Ordinal="1" Type="Description">Lansweeper 4.x through 6.x before 6.0.0.48 allows attackers to execute arbitrary code on the administrator's workstation via a crafted Windows service.</Note>
+         <Note Ordinal="2" Title="Published" Type="Other">2018-08-27</Note>
+         <Note Ordinal="3" Title="Modified" Type="Other">2018-08-27</Note>
+      </Notes>
+      <CVE>CVE-2015-9264</CVE>
+      <References>
+         <Reference>
+            <URL>https://www.lansweeper.com/updates/lansweeper-6-0-0-48-security-update/</URL>
+            <Description>MISC:https://www.lansweeper.com/updates/lansweeper-6-0-0-48-security-update/</Description>
+         </Reference>
+      </References>
+   </Vulnerability>
+</cvrfdoc>

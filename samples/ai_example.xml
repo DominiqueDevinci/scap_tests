@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<myformat xmlns="my_format_schema" 
+ xmlns:ai="http://scap.nist.gov/schema/asset-identification/1.1" 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://scap.nist.gov/schema/asset-identification/1.1 
+ https://csrc.nist.gov/schema/asset-identification/1.1/asset-identification_1.1.0.xsd" >
+ <assets>
+  <!-- this asset identify my home computer (assuming its ip is fixed and only connected to )-->
+  <asset id="my_computer_home" >
+   <ai:computing-device><!-- type of asset -->
+    <ai:connection> <!-- xml schema says that ai:connections may be an element of the type ai:computing-device -->
+     <ai:mac-address>3c:95:09:50:11:6b</ai:mac-address> <!-- and the same xsd schema says that an ai:connections element may contains an element ai:mac-address -->
+    </ai:connection>
+   </ai:computing-device>
+  </asset>
+ </assets>
+</myformat>

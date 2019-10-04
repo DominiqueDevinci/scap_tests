@@ -1,0 +1,15 @@
+<ocil>
+  <!-- some metadata -->
+  <questionnaires>
+    <!-- list of questionnaires referring to tests -->
+  </questionnaires>
+
+  <test_actions>
+    <!-- test questions behavior, determine if pass or fail  -->
+    <!-- ex: if answer to question_1 is no, then pass, else fail. -->
+  </test_actions>
+
+  <questions>
+    <!-- content of questions (text, description, explanations, possible answers ...) -->
+  </questions>
+</ocil>

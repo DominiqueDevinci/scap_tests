@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?>
+<Benchmark xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" id="My_First_Checklist" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1">
+	<status date="2019-04-22">draft</status>
+	<title>Test checklist</title>
+	<description>This small checklist will check some stuffs like ensure your computer have at least 4 physical cores.</description>
+
+	<reference href="http://my_great_website.com/">
+		<!-- dublin core format -->
+		<dc:publisher>My company</dc:publisher>
+	</reference>
+
+	<version>1</version>
+
+	<Group id="G-01">
+		<title>Groupe of rule about checking the power of the computer</title>
+		<Rule id="R-04">
+			<title>Check if there are at least 4 physical cores.</title>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:my_test_company:def:1" href="oval_sb_version.xml"/>
+			</check>
+		</Rule>
+	</Group>
+</Benchmark>

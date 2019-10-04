@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<asset-report-collection xmlns="http://scap.nist.gov/schema/asset-reporting-format/1.1"
+                         xmlns:ai="http://scap.nist.gov/schema/asset-identification/1.1"
+                         xmlns:core="http://scap.nist.gov/schema/reporting-core/1.1"
+>
+  <core:relationships xmlns:arfvocab="http://scap.nist.gov/vocabulary/arf/relationships/1.0#">
+    <core:relationship type="arfvocab:isAbout" subject="report_myserver_1">
+      <core:ref>myserver_1</core:ref>
+    </core:relationship>
+  </core:relationships>
+  <assets>
+    <asset id="myserver_1">
+      <ai:computing-device>
+        <hostname>mycompany.org</hostname>
+        <ai:connections>
+          <ai:connection>
+            <ai:ip-address>
+              <ai:ip-v4>130.192.55.240</ai:ip-v4>
+            </ai:ip-address>
+          </ai:connection>
+        </ai:connections>
+      </ai:computing-device>
+    </asset>
+  </assets>
+  <reports>
+    <report id="report_myserver_1">
+      <content>
+		<!-- custom xml data, here it's very sample but it can involve CVSS, CVE, CWE or other standards -->
+		<!-- can be also an XCCDF result for instance ... -->
+		<server xmlns="custom_taxonomy" >
+			<state>Online</state>
+			<kernel_version>‎5.0-rc6</kernel_version>
+		</server>
+      </content>
+    </report>
+  </reports>
+</asset-report-collection>

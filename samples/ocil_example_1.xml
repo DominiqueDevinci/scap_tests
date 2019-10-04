@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ocil xsi:schemaLocation="http://www.mitre.org/ocil/2 ocil.xsd" xmlns="http://www.mitre.org/ocil/2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!-- some metadata -->
+
+ <!-- list of questionnaires -->
+    <questionnaires>
+        <questionnaire id="ocil:mycompany.org:questionnaire:1" priority="LOW">
+            <title>Backup policy</title>
+            <description>Ensure that the users have external backups in case of accidents or ransomware issues.</description>
+            <actions priority="LOW">
+                <test_action_ref priority="LOW">ocil:mitre.org:testaction:11</test_action_ref>
+            </actions>
+        </questionnaire>
+    </questionnaires>
+    
+    <!-- test questions behavior, determine if pass or fail  -->
+    <test_actions>
+        <boolean_question_test_action id="ocil:mycompany.org:testaction:1" question_ref="ocil:mycompany.org:question:1">
+            <when_true>
+                <result>PASS</result>
+            </when_true>
+            <when_false>
+                <result>FAIL</result>
+            </when_false>
+        </boolean_question_test_action>
+    </test_actions>
+   
+   <!-- questions -->
+    <questions>
+        <boolean_question id="ocil:mycompany.org:question:1" model="MODEL_YES_NO">
+            <question_text>Have you at least one offline backup of your documents ?</question_text>
+        </boolean_question>
+    </questions>
+
+</ocil>
