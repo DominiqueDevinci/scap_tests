@@ -7,15 +7,16 @@ def oval_callback(msg, usr):
 	pprint(type(msg));
 	pprint(msg.__repr__());
 	pprint(msg.object);
-	print(type(msg));
-	print(dir(msg));
-	print(help(msg));
+	#print(type(msg));
+	#print(dir(msg));
+	#print(help(msg));
 	#print(help(msg.user2num));
-	print(msg.get_all_values());
+	#print(msg.get_all_values());
 	return 0
 
-oval_file="../samples/oval_is_quadcore.xml";
-oval_def=oscap.oval.definition_model_import(oval_file);
+oval_file="../../samples/oval_is_quadcore.xml";
+
+oval_def=oscap.oval.definition_model_import_source(oval_file);
 if oval_def==None:
 	print("Cannot load oval file.");
 else:
