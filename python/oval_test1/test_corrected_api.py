@@ -96,4 +96,4 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.6/dist-packages/openscap_api.py", line 190, in __getter_wrapper
     raise TypeError("Wrong number of arguments in function %s" % (func.__name__,))
 TypeError: Wrong number of arguments in function xccdf_rule_result_get_result
-
+''' 
